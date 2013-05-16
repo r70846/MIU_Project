@@ -1,54 +1,123 @@
-<!DOCTYPE html>
-<!--   Russell Gaspard     		  -->
-<!--   MIU 1305, Project 1 	      -->
-<!--   Musician List, Launch Page -->
-
+<!doctype html>  
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="An app that stores and lists musician contacts..." />
-		<meta name="keywords" content="musicians, contacts, splash page" />		
-		<meta name="robots" content="noindex, nofollow" />	
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
-		<meta name="viewport" content="target-densitydpi=device-dpi" />	
-		<meta name="HandheldFriendly" content="True" />			
-		<meta name="MobileOptimized" content="320" />	
 
-		<title>Musician List - Launch Page</title>
-        <link href="css/index.css" rel="stylesheet" type="text/css" />
-	</head>
+		<meta charset="utf-8">
+	
+		<!--  Mobile Optimized -->
+		<meta name="HandheldFriendly" content="True"/>
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="cleartype" content="on"/>
+	
+		<!-- StyleSheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+		<!-- Modernizr  -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+		<title>Band Mates </title>
+		</head>
 	<body>
-		<header>
-			Band Mates
-		</header>
-		<table id="feature">
-			<tr>
-				<td>
-					<img src="img/feature.gif" />
-				</td>
-				<td id="call">
-					Book the Best Musicians for any Gig:
-					<a href="addItem.html"><button id="start">Start Here!</button><a>
-				</td>
-			</tr>
-		</table>
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed" data-theme="a" id="header">
+				<h1>Band Mates</h1>
+			</div>
 		
-		<div id="find">
-			<input type=search" id="search"/><button id="go">Search</button>
+			<div data-role="content">
+				<table id="feature">
+					<tr>
+						<td>
+							<img src="img/feature.gif" />
+						</td>
+						<td id="call">
+							<p id="tagline">Book the Best Musicians</br>For any Gig:</p>
+							<a href="addItem.html" data-ajax="false" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" id="start">Start Here!</a>
+						</td>
+					</tr>
+				</table>
+				
+
+				<div class="ui-grid-a" id="find">
+					<div class="ui-block-a">
+						<input type="search" placeholder="Search Data" data-mini="true" data-theme="c" id="search"></input>
+					</div>
+					<div class="ui-block-b">
+						<a href="#" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-theme="c" id="go">Go</a>
+					</div>
+				</div>
+		
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider" id="browse">
+						Browse Musicians By:
+					</li>
+					<li>
+						<a href="#browse">
+							<h3>First Name</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#browse">
+							<h3>Last Name</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#browse">
+							<h3>Instrument</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#browse">
+							<h3>Rating</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#browse">
+							<h3>Last Gig</h3>
+						</a>
+					</li>
+				</ul>	
+
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		
-		<div id="browse">
-			<span id="browseTitle">Browse Musicians By... </span>
-			<a href="browse.html"><img src="img/btn_first.gif" /></a>
-			<a href="browse.html"><img src="img/btn_last.gif" /></a>
-			<a href="browse.html"><img src="img/btn_instrument.gif" /></a>
-			<a href="browse.html"><img src="img/btn_rating.gif" /></a>
-			<a href="browse.html"><img src="img/btn_previous.gif" /></a>	
+		<!-- ///////////////////////////////////////////////////////////////////// -->
+		
+		<div data-role="page" id="about">
+		
+			<div data-role="header" data-position="fixed" data-theme="a" id="header">
+				<h1>Band Mates</h1>
+			</div>
+		
+			<div data-role="contents">
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#about" data-icon="info" class="ui-btn-active">About</a></li>
+						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		
-		
-		
-		
-		<!-- <a href="addItem.html">ADD A MUSICIAN</a> -->
-	</body>
+		</div>
+	
+	<!-- JavaScript -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>

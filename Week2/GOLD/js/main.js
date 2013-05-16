@@ -8,6 +8,10 @@
 //Wait until the page DOM content has loaded
 window.addEventListener("DOMContentLoaded", function(){
 
+
+
+
+
 	//Element Selection Function
 	function id(id){
 		var thisElement = document.getElementById(id);
