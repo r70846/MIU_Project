@@ -1,0 +1,86 @@
+/*
+   Russell Gaspard
+   Project 1
+   Visual Frameworks - MIU 1305
+   Mobile Development
+   Full Sail University
+*/
+
+
+body{
+	font-family:Arial;
+	background:#c8c8c8;
+	padding:0px;
+	overflow:scroll;
+}
+
+header{
+	width:300px;
+	height:30px;
+	text-align:center;
+	font-weight:bold;
+	font-size:24px;
+	margin-left:2px;	
+	margin-bottom:10px;
+	background:#B2C1F0;
+	border: 1px solid #1A1A1A;
+}
+
+
+#feature{
+	width:300px;
+	margin-left:2px;	
+	background:#B2C1F0;
+	border: 1px solid #1A1A1A;
+}
+
+#call{
+	padding:3px;
+	vertical-align:center;
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#start{
+	margin-top:10px;
+	font-weight:bold;
+	font-size:16px;
+	background:#FBB03B;
+	padding:5px;
+}
+
+div#find{
+	text-align:center;
+	width:300px;
+	margin-left:2px;	
+	margin-top:10px;
+	background:#B2C1F0;
+	border: 1px solid #1A1A1A;
+}
+
+#go{
+	font-weight:bold;
+	font-size:12px;
+}
+
+
+div#browse{
+	text-align:center;
+	font-weight:bold;
+	font-size:24px;
+	
+	width:300px;
+	margin-left:2px;	
+	margin-top:10px;
+	background:#c8c8c8;
+}
+
+img{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:5px;
+	padding:0px;
+}
+

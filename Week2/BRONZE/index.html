@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--   Russell Gaspard     		  -->
-<!--   VFW 1304, Project 4 	      -->
+<!--   MIU 1305, Project 1 	      -->
 <!--   Musician List, Launch Page -->
 
 <html>
@@ -15,13 +15,40 @@
 		<meta name="MobileOptimized" content="320" />	
 
 		<title>Musician List - Launch Page</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<header>
-			<h1>Musician List</h1>
-			<h2>Be prepared for any gig!</h2>
+			Band Mates
 		</header>
-		<a href="addItem.html">ADD A MUSICIAN</a>
+		<table id="feature">
+			<tr>
+				<td>
+					<img src="img/feature.gif" />
+				</td>
+				<td id="call">
+					Book the Best Musicians for any Gig:
+					<a href="addItem.html"><button id="start">Start Here!</button><a>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="find">
+			<input type=search" id="search"/><button id="go">Search</button>
+		</div>
+		
+		<div id="browse">
+			<span id="browseTitle">Browse Musicians By... </span>
+			<a href="browse.html"><img src="img/btn_first.gif" /></a>
+			<a href="browse.html"><img src="img/btn_last.gif" /></a>
+			<a href="browse.html"><img src="img/btn_instrument.gif" /></a>
+			<a href="browse.html"><img src="img/btn_rating.gif" /></a>
+			<a href="browse.html"><img src="img/btn_previous.gif" /></a>	
+		</div>
+		
+		
+		
+		
+		<!-- <a href="addItem.html">ADD A MUSICIAN</a> -->
 	</body>
 </html>
