@@ -12,17 +12,17 @@
 	
 		<!-- StyleSheets -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
 	
 		<!-- Modernizr  -->
 		<script src="js/libs/modernizr.custom.min.js"></script>
 
-		<title>Band Mates </title>
+		<title>Band Mates (Gold)</title>
 		</head>
 	<body>
-		<div data-role="page" id="home">
-			<div data-role="header" data-position="fixed" data-theme="a" id="header">
-				<h1>Band Mates</h1>
+		<div data-role="page" add-back-btn="false" id="home">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="content">
@@ -50,17 +50,7 @@
 		
 				<ul data-role="listview" data-inset="true">
 					<li data-role="list-divider" id="browse">
-						Browse Musicians By:
-					</li>
-					<li>
-						<a href="#browse">
-							<h3>First Name</h3>
-						</a>
-					</li>
-					<li>
-						<a href="#browse">
-							<h3>Last Name</h3>
-						</a>
+						Browse Favorites By:
 					</li>
 					<li>
 						<a href="#browse">
@@ -68,19 +58,29 @@
 						</a>
 					</li>
 					<li>
-						<a href="#browse">
+						<a href="#nobrowse">
+							<h3>First Name</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#nobrowse">
+							<h3>Last Name</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#nobrowse">
 							<h3>Rating</h3>
 						</a>
 					</li>
 					<li>
-						<a href="#browse">
+						<a href="#nobrowse">
 							<h3>Last Gig</h3>
 						</a>
 					</li>
 				</ul>	
 
 			</div>
-			<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -93,17 +93,32 @@
 		
 		<!-- ///////////////////////////////////////////////////////////////////// -->
 		
-		<div data-role="page" id="about">
+		<div data-role="page" data-add-back-btn="true" id="about">
 		
-			<div data-role="header" data-position="fixed" data-theme="a" id="header">
-				<h1>Band Mates</h1>
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="contents">
-
+				<ul data-role="listview" data-inset="true" data-filter="false" id="aboutList">
+					<li data-role="list-divider">
+						About...
+					</li>
+					<li>
+							<h3><a href="../bronze/index.html" data-ajax="false" >Bronze App</a></h3>
+					</li>
+					<li>
+							<h3><a href="https://github.com/r70846/MIU_Project/tree/master/Week2" data-ajax="false" >Code Repo</a></h3>
+					</li>
+					<li>
+							<h3>Credit</h3>
+							<p>All code created by Russ Gaspard for Full Sail's MDBS</p>
+							<p>MIU-1305, Project-2</p>
+					</li>
+				</ul>
 			</div>
 			
-			<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -112,8 +127,256 @@
 					</ul>
 				</div>
 			</div>
+			
 		</div>
+	
+		<!-- ///////////////////////////////////////////////////////////////////// -->
+		
+		<div data-role="page" data-add-back-btn="true" id="gigs">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Band Mates (Gold)</h1>
+			</div>
+		
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true" data-filter="true" id="newFeed">
+					<li data-role="list-divider">
+						Upcoming Shows
+					</li>
+					<li>
+							<h3>Friday 05/24/13</h3>
+							<p>Barbq Bar</p>
+					</li>
+					<li>
+							<h3>Thursday 06/06/13</h3>
+							<p>World of Beer</p>
+					</li>
+					<li>
+							<h3>Tuesday	07/02/13</h3>
+							<p>Back Booth</p>
+					</li>
+					<li>
+							<h3>Saturday 08/10/13</h3>
+							<p>The Social</p>
+					</li>
+					<li>
+							<h3>Friday 08/23/13</h3>
+							<p>Back Booth</p>
+					</li>
+					<li>
+							<h3>Wednesday 09/18/13</h3>
+							<p>Tanquerey's</p>
+					</li>
+					<li>
+							<h3>Tuesday	10/01/13</h3>
+							<p>Ollies</p>
+
+					</li>
+					<li>
+							<h3>Monday	10/14/13</h3>
+							<p>Will's Pub</p>
+					</li>
+					<li>
+							<h3>Saturday 11/09/13</h3>
+							<p>Park Ave CDs</p>
+					</li>
+					<li>
+							<h3>Friday 11/22/13</h3>
+							<p>Will's Pub</p>
+					</li>
+					<li>
+							<h3>Saturday 02/08/14</h3>
+							<p>Back Booth</p>
+					</li>
+					<li>
+							<h3>Friday 02/21/14</h3>
+							<p>Will's Pub</p>
+					</li>
+					<li>
+							<h3>Thursday 03/06/14</h3>
+							<p>The Social</p>
+					</li>		
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="main">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#about" data-icon="info" >About</a></li>
+						<li><a href="#gigs" data-icon="grid" class="ui-btn-active">Gigs</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	
+		<!-- ///////////////////////////////////////////////////////////////////// -->
+		
+		<div data-role="page" data-add-back-btn="true" id="browse">
+		
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Band Mates (Gold)</h1>
+			</div>
+		
+			<div data-role="contents">
+				<div data-role="collapsible-set" data-inset="true" id="imageList">
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/bass.gif" />
+									</td>
+									<td class="player">
+										Dave Cox<br/>
+										Bass
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	321-331-2791	</p>
+						<p>	dcox@bassman.com	</p>
+						<p>	Dave is not as interested in learning material but always ready to jam.	</p>
+					</div>
+					
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/keys.gif" />
+									</td>
+									<td class="player">
+										Dave Gibbs<br/>
+										Keys
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	407-529-856	</p>
+						<p>	dgibbs@fullsail.com	</p>
+						<p>	Hard to get Dave to commit to a gig but always worth it	</p>
+					</div>
+					
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/vocals.gif" />
+									</td>
+									<td class="player">
+										Jenn Willsey<br/>
+										Vocals
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	407-252-4264	</p>
+						<p>	jwillsey@redhead.go	</p>
+						<p>	Sings a fine lead but incredible harmony as well	</p>
+					</div>
+					
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/drums.gif" />
+									</td>
+									<td class="player">
+										John McCune<br/>
+										Drums
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	321-806-861	</p>
+						<p>	jp@fit.com	</p>
+						<p>	Love this guy.	</p>
+					</div>
+				
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/other.gif" />
+									</td>
+									<td class="player">
+										Matt Tuten<br/>
+										Other
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	407-310-7424	</p>
+						<p>	mtuten@gmail.com	</p>
+						<p>	Mandolin player.	</p>
+					</div>
+				
+					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+						<h3>
+							<table>
+								<tr>
+									<td>
+										<img src="img/guitar.gif" />
+									</td>
+									<td class="player">
+										Russell Gaspard<br/>
+										Guitar
+									</td>
+								</tr>
+							</table>
+						</h3>
+						<p>	321 439-0605	</p>
+						<p>	russg@fullsail.com	</p>
+						<p>	Russ also plays fiddle, mandolin and harmonica.	</p>
+					</div>
+
+				</div>
+			</div>
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="main">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	
+		<!-- ///////////////////////////////////////////////////////////////////// -->
+		
+		<div data-role="page" data-add-back-btn="true" id="nobrowse">
+		
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Band Mates (Gold)</h1>
+			</div>
+		
+			<div data-role="contents" id="sorry">
+				<h1>Sorry!</h1>
+	    		<h2>This feature is not yet available.</h2>
+			</div>
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="main">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	
+		<!-- ///////////////////////////////////////////////////////////////////// -->
+	
 	
 	<!-- JavaScript -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>

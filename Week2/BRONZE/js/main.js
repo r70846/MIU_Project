@@ -8,6 +8,10 @@
 //Wait until the page DOM content has loaded
 window.addEventListener("DOMContentLoaded", function(){
 
+
+
+
+
 	//Element Selection Function
 	function id(id){
 		var thisElement = document.getElementById(id);
@@ -91,6 +95,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	//Display Data
 	function displayData(){
+	
 		if(localStorage.length === 0){
 			alert("No musician data has been saved. Default data has been loaded.");
 			loadDefaults();
@@ -366,6 +371,12 @@ window.addEventListener("DOMContentLoaded", function(){
 	//Get Rating Event
 	var slider = id("rating");
 	slider.addEventListener("change", newRange);	
+	
+	//Get Relevant Click Events (BROWSE)
+	
+		var browseFirst = id("browseFirst");
+	browseFirst.addEventListener("click", displayData);
+	
 	
 });
 
