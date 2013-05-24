@@ -14,11 +14,34 @@ $('#addItem').on('pageinit', function(){
 		var theForm = $('#theForm');
 		    theForm.validate({
 			invalidHandler: function(form, validator) {
+			
+			var errors = id('errors');
+			errors.innerHTML = "";
+			
+			var message = "Please fill required fields: ";
+			for(var key in validator.submitted){
+				var label = $('label[for^="' + key + '"]')
+				
+				var text = label.text();
+				text = text.substring(0,text.length-1)
+				message = message + text + " ";
+				
+				console.log(text);
+				}
+				
+				errors.innerHTML = message;
+
+				//alert(message);
+			
 			},
 			
 			submitHandler: function() {
+			//Clear Errors
+			var errors = id('errors');
+			errors.innerHTML = "";
+			
 		var data = theForm.serializeArray();
-			storeData(data);
+			saveData(data);
 		}
 		
 	});
@@ -29,44 +52,19 @@ $('#addItem').on('pageinit', function(){
 		return thisElement;
 	}
 	
-	//var storeDataButton = id("submit");
-	//storeDataButton.addEventListener("click", saveData);
-	
 });
-
-//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
 //Supporting Functions
 
-
-
-
-	function saveData(key){
-		alert("Hello");
+	function saveData(data){
+		//alert("Hello");
+		var randomID = Math.floor(Math.random()*100000); //Make new key
 	
-		if(!key){
-			var randomID = Math.floor(Math.random()*100000); //Make new key
-		}else{
-			var randomID = key; //reuse previos key to overwrite for "edit"
-		}
-		
-		//Compile form data into an object - properties include array with label and value.
-		var entry		={};
-
-		entry.fname		= ["First Name:", id("fname").value];
-		entry.lname		= ["Last Name:", id("lname").value];
-		entry.phone		= ["Phone:", id("phone").value];
-		entry.email		= ["Email:", id("email").value];
-		entry.primary	= ["Primary Instrument:", id("primary").value];
-		entry.all		= getAllInstruments();
-		entry.rating	= ["Rating:", id("rating").value];
-		entry.lgig		= ["Last Gig:", id("lgig").value];
-		entry.notes		= ["Notes:", id("notes").value];
-		
 		//Save into localStorage
-		localStorage.setItem(randomID, JSON.stringify(entry));
-		console.log(randomID + " " + JSON.stringify(entry));
+		localStorage.setItem(randomID, JSON.stringify(data));
+		console.log(randomID + " " + JSON.stringify(data));
 		alert("Musician Data Saved");	
+		window.location.reload();
 	};
 	
 	

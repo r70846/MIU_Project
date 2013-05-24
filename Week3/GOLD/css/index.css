@@ -105,3 +105,27 @@ div#browse{
 	padding-left:20px;
 }
 
+label.error{
+
+	display:block;
+	margin-top:10px;
+	color:#cc0000;
+
+}
+
+#required{
+	font-style: italic;
+}
+
+#errors{
+	margin-top:15px;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+span.hint{
+	margin-left:30px;
+	font-style: italic;
+		font-size:14px;
+	
+}

@@ -36,7 +36,7 @@
 						</td>
 						<td id="call">
 							<p id="tagline">Book the Best Musicians</br>For any Gig:</p>
-							<a href="#addItem" data-ajax="false" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" id="start">Start Here!</a>
+							<a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" id="start">Start Here!</a>
 						</td>
 					</tr>
 				</table>
@@ -379,15 +379,17 @@
 		</div>
 	
 		<!-- ///////////////////////////////////////////////////////////////////// -->
-	<div data-role="page" id="addItem" data-add-back-btn="true">
+	<div data-role="page" data-add-back-btn="true" id="addItem" >
 		<div data-role="header" data-position="fixed" data-theme="a">
+			<!-- <a href="#addItem" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" id="start">Home</a> -->
 			<h1>Add Musician</h1>
 		</div>
 		
 		<div data-role="content">
 			<form action="" method="post" id="theForm">
 			<span id="required">( * required fields )</span>
-			
+			<div id="errors"></div>
+			<hr/>
 				<div data-role="fieldcontain"">
 					<label for="fname">* First Name:</label>
 					<input type="text" name="fname" id="fname" class="required" placeholder="Enter First Name" />
@@ -400,12 +402,14 @@
 				
 				<div data-role="fieldcontain"">
 					<label for="phone">* Phone:</label>
-					<input type="text" name="phone" id="phone" class="required" placeholder="Enter Phone Number" />
+					<input type="text" name="phone" id="phone" class="required phoneUS" placeholder="Enter Phone Number" />
+					<span class="hint">example: xxx-xxx-xxxx</span>
 				</div>
 				
 				<div data-role="fieldcontain"">
 					<label for="email">* Email:</label>
 					<input type="email" name="email" id="email" class="required email" placeholder="Enter Email Address" />
+					<span class="hint">example: john@hotmail.com</span>
 				</div>
 				
 				<div data-role="fieldcontain"">
@@ -441,21 +445,26 @@
 							<label for="a11-6">Other</label>
 						</fieldset>
 					</div>
+					<span class="hint">List additional instruments played.</span>
 				</div>
+				
 				
 				<div data-role="fieldcontain"">
 					<label for="rating">Rating:</label>
 					<input type="range" name="rating" id="rating" value="5" min="1" max="10" data-mini="true" />
+					<span class="hint">Rate this musician from 1 to 10.</span>
 				</div>
 
 				<div data-role="fieldcontain"">
 					<label for="rating">Last Gig:</label>
 					<input type="date" name="lgig" id="lgig"/>
+					<span class="hint">Enter last booking date for this musician.</span>
 				</div>
 
 				<div data-role="fieldcontain"">
 					<label for="notes">Notes:</label>
 					<textarea name="notes" id="notes"></textarea>
+					<span class="hint">Record pertinent details about musician.</span>
 				</div>
 				
 				<div data-role="fieldcontain"">

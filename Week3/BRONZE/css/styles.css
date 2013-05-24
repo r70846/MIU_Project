@@ -45,6 +45,13 @@ fieldset {
 	border: 0;
 }
 
+span.hint{
+	margin-left:10px;
+	font-style: italic;
+		font-size:14px;
+	
+}
+
 legend{
 	letter-spacing: .08em;
 	font-weight:bold;
