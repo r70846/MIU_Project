@@ -1,6 +1,6 @@
 // Russell Gaspard
-// Project 1
-// Visual Frameworks - MIU 1305
+// Project 3
+// MIU 1305
 // Mobile Development
 // Full Sail University
 

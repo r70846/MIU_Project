@@ -1,6 +1,6 @@
 /*
    Russell Gaspard
-   Project 2
+   Project 3
 	MIU 1305
    Mobile Development
    Full Sail University
@@ -99,3 +99,9 @@ div#browse{
 #newsFeed{
 	margin:30px;
 }
+
+#checks{
+	padding-top:10px;
+	padding-left:20px;
+}
+
