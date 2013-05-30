@@ -1,0 +1,131 @@
+/*
+   Russell Gaspard
+   Project 3
+	MIU 1305
+   Mobile Development
+   Full Sail University
+*/
+
+
+#home{
+	background:#898989;	
+}
+
+#about{
+	background:#C0C0C0;	
+}
+
+div#browse{
+	background:#C0C0C0;	
+}
+
+#nobrowse{
+	background:#C0C0C0;	
+}
+
+#gigs{
+	background:#898989;	
+}
+
+#feature{
+	background:#B2C1F0;
+	width:100%;
+
+}
+
+#call{
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+#tagline{
+
+
+}
+#start{
+	width:150px;
+	margin-left:30px;
+	background:#FBE68A;
+}
+
+
+#find{
+	padding-left:40px;
+	background:#5997CE;
+	background:#B2C1F0;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+#go{
+	width:65px;
+	margin-left:10px;
+}
+
+#browse{
+	background:#B2C1F0;
+	color:black;
+}
+
+
+.ui-btn-active{
+	background:#B2C1F0;
+	color:black;
+
+}
+
+.player{
+	padding:20px;
+	vertical-align:top;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#sorry{
+	padding:30px;
+}
+
+#imageList{
+	margin:30px;
+}
+
+#aboutList{
+	margin:30px;
+}
+
+#newsFeed{
+	margin:30px;
+}
+
+#checks{
+	padding-top:10px;
+	padding-left:20px;
+}
+
+label.error{
+
+	display:block;
+	margin-top:10px;
+	color:#cc0000;
+
+}
+
+#required{
+	font-style: italic;
+}
+
+#errors{
+	margin-top:15px;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+span.hint{
+	margin-left:30px;
+	font-style: italic;
+		font-size:14px;
+	
+}
