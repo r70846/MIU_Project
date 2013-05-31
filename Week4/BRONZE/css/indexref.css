@@ -89,6 +89,15 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
 .ui-btn{
 	background: #596178;
 	color:#E0E6F9;
@@ -151,8 +160,6 @@ span.hint{
 div.header{
 	background: #596178;
 	background: #2D303C;
-	text-align:left;
-	
 }
 
 
@@ -193,20 +200,9 @@ div.header{
 	color:black;
 }
 
-
-
 .ui-btn-active{
 	background: #2D303C;
 	background:#B2C1F0;
 	color#596178;
-
-}
-
-#brand{
-display:inline;
-
-}
-
-h1{
 
 }
