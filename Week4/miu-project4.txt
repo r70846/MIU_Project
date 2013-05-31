@@ -1,3 +1,5 @@
 https://github.com/r70846/MIU_Project/tree/master/Week4
 
-testing
+http://r70846.github.io/MIU_Project/GOLD/index.html
+
+http://r70846.github.io/MIU_Project/BRONZE/index.html
