@@ -1,0 +1,208 @@
+/*
+   Russell Gaspard
+   Project 4
+	MIU 1305
+   Mobile Development
+   Full Sail University
+*/
+
+
+body{
+	background-image:url(../img/texture8.png);
+	background-image:repeat;	
+
+}
+
+#home{
+	background:#898989;	
+	background-image:url(../img/texture8.png);
+	background-image:repeat;	
+}
+
+#about{
+	background:#C0C0C0;	
+	background-image:url(../img/texture8.png);
+	background-image:repeat;
+}
+
+#addItem{
+	background:#C0C0C0;	
+}
+
+#browse{
+	background:#C0C0C0;	
+}
+
+#nobrowse{
+	background:#C0C0C0;	
+	background-image:url(../img/texture8.png);
+	background-image:repeat;
+}
+
+#gigs{
+	background:#898989;	
+	background-image:url(../img/texture8.png);
+	background-image:repeat;
+}
+
+#feature{
+	background:#B2C1F0;
+	width:100%;
+
+}
+
+#call{
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+#tagline{
+
+
+}
+#start{
+	width:150px;
+	margin-left:30px;
+	background:#FBE68A;
+	background:#AB5E04;
+
+}
+
+
+#find{
+	padding-left:40px;
+	background:#5997CE;
+	background:#B2C1F0;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+#go{
+	width:65px;
+	margin-left:10px;
+	color:#fff;
+	font-weight:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-btn{
+	background: #596178;
+	color:#E0E6F9;
+	border-width:1px;
+	
+}
+
+.player{
+	padding:20px;
+	vertical-align:top;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#sorry{
+	padding:30px;
+}
+
+#imageList{
+	margin:30px;
+}
+
+#aboutList{
+	margin:30px;
+}
+
+#newsFeed{
+	margin:30px;
+}
+
+#checks{
+	padding-top:10px;
+	padding-left:20px;
+}
+
+label.error{
+
+	display:block;
+	margin-top:10px;
+	color:#cc0000;
+
+}
+
+#required{
+	font-style: italic;
+}
+
+#errors{
+	margin-top:15px;
+	font-weight: bold;
+	color:#cc0000;
+}
+
+span.hint{
+	margin-left:30px;
+	font-style: italic;
+		font-size:14px;
+}
+
+div.header{
+	background: #596178;
+	background: #2D303C;
+}
+
+
+#dbrowse{
+	background:#B2C1F0;
+	color:#2D303C;
+	border-style:none;
+}
+
+#dabout{
+	background:#B2C1F0;
+	color:#2D303C;
+	border-style:none;
+}
+
+#dgigs{
+	background:#B2C1F0;
+	color:#2D303C;
+	border-style:none;
+
+}
+
+
+#hnav{
+	color: #2D303C;
+}
+#anav{
+	color: #2D303C;
+}
+#gnav{
+	color: #2D303C;
+}
+
+.ui-li{
+	border-style:solid;
+	border-width:1px;
+	background:#E0E6F9;
+	color:black;
+}
+
+.ui-btn-active{
+	background: #2D303C;
+	background:#B2C1F0;
+	color#596178;
+
+}
