@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--   Russell Gaspard     		 -->
-<!--   MIU 1305, Project 3 	     -->
+<!--   MIU 1305, Project 4 	     -->
 <!--   Musician List, Main Pages -->
 <html>
 	<head>
@@ -14,6 +14,7 @@
 		<meta http-equiv="cleartype" content="on"/>
 	
 		<!-- StyleSheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 		<link href="css/index.css" rel="stylesheet" type="text/css" />
 	
@@ -24,8 +25,8 @@
 		</head>
 	<body>
 		<div data-role="page" add-back-btn="false" id="home">
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h1>Band Mates (Gold)</h1>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="content">
@@ -36,7 +37,7 @@
 						</td>
 						<td id="call">
 							<p id="tagline">Book the Best Musicians</br>For any Gig:</p>
-							<a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" id="start">Start Here!</a>
+							<a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" id="start">Start Here!</a>
 						</td>
 					</tr>
 				</table>
@@ -52,7 +53,7 @@
 				</div>
 		
 				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider" id="browse">
+					<li data-role="list-divider" id="dbrowse">
 						Browse Favorites By:
 					</li>
 					<li>
@@ -86,9 +87,9 @@
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+						<li><a href="#home" data-icon="home" class="ui-btn-active" id="hnav">Home</a></li>
+						<li><a href="#about" data-icon="info" id="anav">About</a></li>
+						<li><a href="#gigs" data-icon="grid" id="gnav">Gigs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -98,20 +99,23 @@
 		
 		<div data-role="page" data-add-back-btn="true" id="about">
 		
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h1>Band Mates (Gold)</h1>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="contents">
 				<ul data-role="listview" data-inset="true" data-filter="false" id="aboutList">
-					<li data-role="list-divider">
+					<li data-role="list-divider" id="dabout">
 						About...
+					</li>
+					<li>
+							<h3><a href="http://r70846.github.io/MIU_Project/GOLD/index.html" data-ajax="false"> gh-pages</a></h3>
 					</li>
 					<li>
 							<h3><a href="../bronze/index.html" data-ajax="false" >Bronze App</a></h3>
 					</li>
 					<li>
-							<h3><a href="https://github.com/r70846/MIU_Project/tree/master/Week2" data-ajax="false" >Code Repo</a></h3>
+							<h3><a href="https://github.com/r70846/MIU_Project/tree/master/Week4" data-ajax="false" >Code Repo</a></h3>
 					</li>
 					<li>
 							<h3>Credit</h3>
@@ -124,25 +128,26 @@
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#about" data-icon="info" class="ui-btn-active">About</a></li>
-						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+						<li><a href="#home" data-icon="home" id="hnav">Home</a></li>
+						<li><a href="#about" data-icon="info" class="ui-btn-active" id="anav">About</a></li>
+						<li><a href="#gigs" data-icon="grid" id="gnav">Gigs</a></li>
 					</ul>
 				</div>
 			</div>
+		</div>
 			
 		</div>
 	
 		<!-- ///////////////////////////////////////////////////////////////////// -->
 		
 		<div data-role="page" data-add-back-btn="true" id="gigs">
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h1>Band Mates (Gold)</h1>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="content">
 				<ul data-role="listview" data-inset="true" data-filter="true" id="newFeed">
-					<li data-role="list-divider">
+					<li data-role="list-divider" id="dgigs">
 						Upcoming Shows
 					</li>
 					<li>
@@ -204,9 +209,9 @@
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#about" data-icon="info" >About</a></li>
-						<li><a href="#gigs" data-icon="grid" class="ui-btn-active">Gigs</a></li>
+						<li><a href="#home" data-icon="home" id="hnav">Home</a></li>
+						<li><a href="#about" data-icon="info" class="ui-btn-active" id="anav">About</a></li>
+						<li><a href="#gigs" data-icon="grid" id="gnav">Gigs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -216,13 +221,13 @@
 		
 		<div data-role="page" data-add-back-btn="true" id="browse">
 		
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h1>Band Mates (Gold)</h1>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="contents">
 				<div data-role="collapsible-set" data-inset="true" id="imageList">
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -241,7 +246,7 @@
 						<p>	Dave is not as interested in learning material but always ready to jam.	</p>
 					</div>
 					
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -260,7 +265,7 @@
 						<p>	Hard to get Dave to commit to a gig but always worth it	</p>
 					</div>
 					
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -279,7 +284,7 @@
 						<p>	Sings a fine lead but incredible harmony as well	</p>
 					</div>
 					
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -298,7 +303,7 @@
 						<p>	Love this guy.	</p>
 					</div>
 				
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -317,7 +322,7 @@
 						<p>	Mandolin player.	</p>
 					</div>
 				
-					<div data-role="collapsible" data-collapsed="true" data-theme="c">
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
 						<h3>
 							<table>
 								<tr>
@@ -340,14 +345,8 @@
 			</div>
 			
 			
-			<div data-role="footer" data-position="fixed" data-id="main">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
-					</ul>
-				</div>
+			<div data-role="footer" data-position="fixed" >
+
 			</div>
 			
 		</div>
@@ -356,8 +355,8 @@
 		
 		<div data-role="page" data-add-back-btn="true" id="nobrowse">
 		
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h1>Band Mates (Gold)</h1>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Band Mates (Gold)</h1>
 			</div>
 		
 			<div data-role="contents" id="sorry">
@@ -369,21 +368,21 @@
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-						<li><a href="#gigs" data-icon="grid">Gigs</a></li>
+						<li><a href="#home" data-icon="home" id="hnav">Home</a></li>
+						<li><a href="#about" data-icon="info" id="anav">About</a></li>
+						<li><a href="#gigs" data-icon="grid" id="gnav">Gigs</a></li>
 					</ul>
 				</div>
 			</div>
+		</div>
 			
 		</div>
 	
 		<!-- ///////////////////////////////////////////////////////////////////// -->
 	<div data-role="page" data-add-back-btn="true" id="addItem" >
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<!-- <a href="#addItem" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" id="start">Home</a> -->
-			<h1>Add Musician</h1>
-		</div>
+			<div data-role="header" data-position="fixed" data-theme="a" class="header">
+				<h1><img src="img/brand2.gif" id="brand" />Add Musician...</h1>
+			</div>
 		
 		<div data-role="content">
 			<form action="" method="post" id="theForm">
